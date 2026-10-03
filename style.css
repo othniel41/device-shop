@@ -96,7 +96,7 @@ body {
 
 .prod-left {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.8rem;
     align-items: center;
 }
 
@@ -136,15 +136,19 @@ body {
 
 .coupon {
     flex: 1;
-    padding: 0.8rem; 
+    width: 70%; 
+    padding-inline: 10px ;
+    height: 50px;
+    font-weight: 400;
     border-radius: 0.5rem;
     border: 1px solid #D2D5DA;
     background: #FFFFFF;
 }
 
 .btn {
-    color: #FFFFFF;
-    padding: 0.8rem 1.2rem; 
+    color: #FFFFFF; 
+    width: 35%;
+    font-weight: 600;
     border-radius: 0.5rem;
     border: 1px solid #1D1D1F;
     background: #1D1D1F;
@@ -196,7 +200,7 @@ body {
 }
 
 .Iplace, .country-select, .input-code {
-        margin-top: 0.5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1.7rem;
 }
 
