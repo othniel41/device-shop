@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Device Shop Checkout">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="resources/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Device Shop Checkout | devChallenges.io</title>
+</head>
+<body>
+  <header class="entete">
+      <div class="head-checkout"> Checkout</div>
+      <span class="badge">3 ITEMS</span>
+  </header>
+  <main class="container">
+    <div class="panier">
+
+      <div class="produit">
+        <div class="prod-left">
+          <div class="box"><img src="resources/Gold.png" alt="iPhone 12 Pro" class="iphone"></div>
+          <p class="info">
+            <span class="nom-prod_price">iPhone 12 Pro <br> <span class="type">Golden</span></span>
+            <span class="close_quantite">x 1</span>
+          </p>
+        </div>
+        <div class="prod-right">
+          <span class="nom-prod_price">$999.00</span>
+          <span class="close_quantite"> x </span>
+        </div>
+      </div>
+      
+      <div class="produit">
+        <div class="prod-left">
+          <div class="box"><img src="resources/Apple-watch.png" alt="Apple Watch" class="iphone"></div>
+          <p class="info">
+            <span class="nom-prod_price">Apple Watch<br> <span class="type">Blue</span></span>
+            <span class="close_quantite">x 1</span>
+          </p>
+        </div>
+        <div class="prod-right">
+          <span class="nom-prod_price">$399.00</span>
+          <span class="close_quantite"> x </span>
+        </div>
+      </div>
+
+      <div class="produit">
+        <div class="prod-left">
+           <div class="box"><img src="resources/iMac.png" alt="iMac" class="iphone"></div>
+          <p class="info">
+            <span class="nom-prod_price">iMac<br> <span class="type">Green</span></span>
+            <span class="close_quantite">x 1</span>
+          </p>
+        </div>
+        <div class="prod-right">
+          <span class="nom-prod_price">$1199.00</span>
+          <span class="close_quantite"> x </span>
+        </div>
+      </div>
+      
+      <div class="separe"></div>
+
+      <div class="button_input">
+        <form action="#" method="get">
+          <!-- Ajout d'un id et d'un name sur le champ coupon pour éliminer l'alerte -->
+          <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code" class="coupon">
+          <button class="btn" type="submit">Apply Coupon</button>
+        </form>
+      </div>
+
+      <div class="totaux">
+          <div class="label-sub">Sub total</div>
+          <div class="price-sub">$2597.00</div>
+          
+          <div class="label-tax">Tax</div>
+          <div class="price-tax">$623.28</div>
+          
+          <div class="label-total">Total</div>
+          <div class="price-total">$3220.28</div>
+      </div>
+    </div>
+    
+    <div class="formulaire">
+      <h3 class="about">Contact Information</h3>
+      <form action="#" method="get" class="form">
+        <label for="name" class="name">First & last name</label>
+        <input type="text" id="name" name="name" class="Iplace" placeholder="Enter first & last name" autocomplete="name">
+
+        <label for="email" class="adress">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" class="Iplace" autocomplete="email" required>
+
+        <div class="info-perso">
+          <article class="country">
+            <label for="country" class="country-title">Country</label><br>
+            <select name="country" id="country" class="country-select" autocomplete="country">
+              <option selected value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Ivory Coast">Ivory Coast</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </article>
+
+          <article class="postalcode">
+            <label for="code" class="postal-code">Postal Code</label><br>
+            <input type="text" id="code" name="postal-code" placeholder="00270" class="input-code" autocomplete="postal-code">
+          </article>
+        </div>
+
+        <button type="submit" class="btn-form">Continue</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.entete {
+    background-image: url(resources/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.head-checkout {
+    margin-top: 2.85rem;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.badge {
+    background: #1D1D1F;
+    padding: 7px;
+    font-weight: 300;
+    border-radius: 50px;
+    height: max-content;
+    font-size: 0.55rem;
+    margin-top: 2.95rem;
+    color: #FFFFFF;
+}
+
+.container {
+    margin: -6rem auto 3rem auto;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 1.5rem;
+    border: 1.5px solid #E5E7EB;
+    box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+    background: #FFFFFF;
+}
+
+.panier {
+    padding: 20px;
+    display: flex;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background: #E5E7EB;
+    gap: 20px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #D2D5DA;
+    background: #F3F4F6;
+}
+
+.iphone {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7rem;
+}
+
+.produit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod-left {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.prod-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.nom-prod_price {
+    color: #1D1D1F;
+    font-weight: 600;
+}
+
+.type {
+    color: #394150;
+    font-weight: 500;
+}
+
+.close_quantite {
+    color: #394150;
+    font-weight: 400;
+}
+
+.separe {
+    border-top: 1.5px solid #D2D5DA;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.button_input form {
+    display: flex;
+    gap: 10px;
+}
+
+.coupon {
+    flex: 1;
+    padding: 0.8rem; 
+    border-radius: 0.5rem;
+    border: 1px solid #D2D5DA;
+    background: #FFFFFF;
+}
+
+.btn {
+    color: #FFFFFF;
+    padding: 0.8rem 1.2rem; 
+    border-radius: 0.5rem;
+    border: 1px solid #1D1D1F;
+    background: #1D1D1F;
+    cursor: pointer;
+}
+
+.totaux {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.8rem;
+    margin-top: 10px;
+}
+
+.label-sub, .label-tax, .price-sub, .price-tax{
+    color: #394150;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.label-total, .price-total {
+    color: #1D1D1F;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.price-sub, .price-tax, .price-total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulaire {
+    background: #FFFFFF;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #1D1D1F;
+}
+
+.name, .adress, .country, .postal-code {
+    font-size: 1.1rem;
+    color: #394150;
+    font-weight: 500;
+}
+
+.Iplace, .country-select, .input-code {
+        margin-top: 0.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.Iplace {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #D2D5DA;
+    background: #F3F4F6;
+}
+
+.info-perso {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.country-select, .input-code {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #D2D5DA;
+    background: #F3F4F6;
+}
+
+.btn-form {
+    width: 100%;
+    background: #1D1D1F;
+    color: #FFFFFF;
+    padding: 1rem;
+    border: 1px solid #1D1D1F;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 765px) {
+    .container {
+        display: flex;
+        margin: -6rem auto 3rem auto;
+        width: 90%;
+        max-width: 1100px;
+        border-radius: 1rem;
+        border: 1.5px solid #E5E7EB;
+        box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+        background: #FFFFFF;
+    }
+    .panier {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    background: #E5E7EB;
+    gap: 20px;
+}
+.formulaire {
+    background: #FFFFFF;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+}
