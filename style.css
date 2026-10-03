@@ -246,25 +246,28 @@ body {
         margin: -6rem auto 3rem auto;
         width: 90%;
         max-width: 1100px;
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         border: 1.5px solid #E5E7EB;
         box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
         background: #FFFFFF;
     }
     .panier {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    background: #E5E7EB;
-    gap: 20px;
-}
-.formulaire {
-    background: #FFFFFF;
-    width: 50%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-}
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 1.5rem;
+        border-top-right-radius: 0px;
+        justify-content: space-between;
+        width: 50%;
+        background: #E5E7EB;
+        gap: 20px;
+    }
+    .formulaire {
+        background: #FFFFFF;
+        width: 50%;
+        padding: 40px;
+        border-top-right-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
 }
